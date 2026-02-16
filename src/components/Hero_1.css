@@ -1,0 +1,149 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 395px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-responces-button {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    height: 61.77px;
+    padding: 8.24903px;
+
+    background: linear-gradient(108.15deg, #BF0033 -8.28%, #FF6890 86.14%);
+    border-radius: 16.4981px;
+    border: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 96.2%;
+    letter-spacing: -0.03em;
+    text-align: center;
+
+    gap: 2.54px;
+
+
+    margin-top: -210px;
+    z-index: 2;
+}
+
+.hero-info {
+    margin-top: -60px;
+    position: relative;
+    width: 100%;
+}
+
+.hero-img-2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+}
+
+.hero-info-text {
+    position: absolute;
+    top: 71px;
+    left: 31px;
+    right: 25px;
+    z-index: 2;
+}
+
+.hero-info-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 86%;
+    letter-spacing: -3%;
+    color: #F982A2
+}
+
+.highlight{
+    color: #E60D47;
+}
+
+.hero-info-description{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: -3%;
+    color: #404040;
+
+    margin-top: 22px;
+}
+
+.description-highlight{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: -3%;
+    color: #404040;
+}
+
+.hero-info-card{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #E60D471A;
+    margin-top: 12px;
+    max-width: 280px;
+}
+
+.hero-info-card-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.card-highlight{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+
+}
