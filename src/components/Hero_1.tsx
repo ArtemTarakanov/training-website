@@ -22,6 +22,15 @@ export default function Hero_1(){
                             <p className = "hero-info-card-text"><span className = "card-highlight">Мой подход</span> - это не просто «похудеть», а изменить тело, мышление и образ жизни</p>
                         </div>
 
+                        <div className = "hero-info-sub">
+                            <p className = "hero-info-sub-text">У меня сотни отзывов, реальных кейсов
+                                и историй трансформации. Женщины худеют на <span className = "sub-highlight">10, 20, 30</span> и даже <span className = "sub-highlight">40 кг - и становятся неузнаваемыми</span>
+                            </p>
+                        </div>
+
+                        <button className="gradient-border-btn">Бесплатная консультация</button>
+
+
                     </div>
                 </div>
 
