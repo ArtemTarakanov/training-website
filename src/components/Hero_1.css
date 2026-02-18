@@ -9,14 +9,12 @@ html, body {
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding-top: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 24px var(--container-padding) 0;
 }
 
 .hero-container {
     width: 100%;
-    max-width: 395px;
+    max-width: var(--container-max-width);
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -35,31 +33,30 @@ html, body {
 
 .hero-responces-button {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--color-white);
     cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 300px;
+    max-width: min(300px, 90%);
     height: 61.77px;
     padding: 8.24903px;
 
-    background: linear-gradient(108.15deg, #BF0033 -8.28%, #FF6890 86.14%);
-    border-radius: 16.4981px;
+    background: linear-gradient(108.15deg, var(--color-primary-dark) -8.28%, var(--color-secondary) 86.14%);
+    border-radius: var(--radius-medium);
     border: none;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(18px, 5vw, 20px);
     line-height: 96.2%;
     letter-spacing: -0.03em;
     text-align: center;
 
     gap: 2.54px;
-
 
     margin-top: -210px;
     z-index: 2;
@@ -72,117 +69,115 @@ html, body {
 }
 
 .hero-img-2 {
-    width: 100%;
+    width: calc(100% + 1px);
     height: auto;
     display: block;
     object-fit: cover;
-
+    position: relative;
+    left: -0.5px;
 }
 
 .hero-info-text {
     position: absolute;
     top: 71px;
-    left: 31px;
-    right: 25px;
+    left: clamp(20px, 7.8%, 31px);
+    right: clamp(20px, 6.3%, 25px);
     z-index: 2;
 }
 
 .hero-info-heading{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
     font-style: italic;
-    font-size: 28px;
+    font-size: clamp(22px, 7vw, 28px);
     line-height: 86%;
     letter-spacing: -3%;
-    color: #F982A2
+    color: var(--color-primary-light);
 }
 
 .highlight{
-    color: #E60D47;
+    color: var(--color-primary);
 }
 
 .hero-info-description{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
-    font-size: 12px;
+    font-size: clamp(10px, 2.8vw, 12px);
     line-height: 120%;
-    letter-spacing: -3%;
-    color: #404040;
-
+    letter-spacing: -0.03em;
+    color: var(--color-text-dark);
     margin-top: 22px;
 }
 
 .description-highlight{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
-    font-size: 12px;
+    font-size: clamp(10px, 2.8vw, 12px);
     line-height: 120%;
-    letter-spacing: -3%;
-    color: #404040;
+    letter-spacing: -0.03em;
+    color: var(--color-text-dark);
 }
 
 .hero-info-card{
-    border-radius: 5px;
+    border-radius: var(--radius-xs);
     padding: 10px;
     background-color: #E60D471A;
     margin-top: 12px;
-    max-width: 280px;
+    width: 100%;
+    max-width: min(280px, calc(100% - 20px));
 }
 
 .hero-info-card-text{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
     font-style: italic;
-    font-size: 12px;
+    font-size: clamp(10px, 2.8vw, 12px);
     line-height: 1;
     letter-spacing: -0.03em;
 }
 
 .card-highlight{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
     font-style: italic;
-    font-size: 12px;
+    font-size: clamp(10px, 2.8vw, 12px);
     line-height: 1;
     letter-spacing: -0.03em;
-
 }
 
 .hero-info-sub-text{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
-    font-size: 12px;
+    font-size: clamp(10px, 2.8vw, 12px);
     line-height: 100%;
     letter-spacing: -0.03em;
     margin-top: 13px;
-    max-width: 250px;
+    max-width: 225px;
 }
 
 .sub-highlight{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
-    font-size: 12px;
+    font-size: clamp(10px, 2.8vw, 12px);
     line-height: 1;
     letter-spacing: -0.03em;
-    color: #000000E5
+    color: var(--color-text-black);
 }
 
 .gradient-border-btn {
-    background: #FFFFFF;
-
+    background: var(--color-white);
     position: relative;
     z-index: 1;
-
-    padding: 8px 16px;
+    padding: clamp(6px, 1.8vw, 8px) clamp(12px, 4vw, 16px);
     border: none;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
+    border-radius: var(--radius-small);
+    font-family: var(--font-family);
     font-weight: 600;
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.9);
+    font-size: clamp(11px, 3vw, 12px);
+    color: white;
     cursor: pointer;
-
     margin-top: 12px;
+
 }
 
 .gradient-border-btn::before {
@@ -192,7 +187,58 @@ html, body {
     left: -1px;
     right: -1px;
     bottom: -1px;
-    background: linear-gradient(108deg, #BF0033, #FF6890);
-    border-radius: 10px;
+    background: linear-gradient(108deg, var(--color-primary-dark), var(--color-secondary));
+    border-radius: var(--radius-small);
     z-index: -1;
+}
+
+@media (max-width: 430px) {
+    .hero-info-card {
+        max-width: min(220px, calc(100% - 20px));
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-info-heading {
+        font-size: 22px;
+    }
+    .hero-info-description,
+    .hero-info-card-text,
+    .hero-info-sub-text,
+    .description-highlight,
+    .card-highlight,
+    .sub-highlight {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding-top: 40px;
+    }
+    
+    .hero-container {
+        max-width: 600px;
+    }
+    
+    .hero-responces-button {
+        max-width: 350px;
+        margin-top: -250px;
+    }
+    
+    .hero-info {
+        margin-top: -80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        max-width: 800px;
+    }
+    
+    .hero-responces-button {
+        max-width: 400px;
+        margin-top: -300px;
+    }
 }

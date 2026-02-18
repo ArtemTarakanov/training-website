@@ -1,0 +1,71 @@
+.chinaMarathon-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 30px;
+    padding: 0 var(--container-padding);
+}
+
+.chinaMarathon-heading{
+    width: 100%;
+    max-width: var(--container-max-width);
+    border-radius: var(--radius-large);
+    padding: 20px clamp(20px, 7%, 28px) 25px;
+    background: var(--color-bg-light);
+}
+
+.chinaMarathon-title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp(24px, 7vw, 28px);
+    line-height: 102%;
+    letter-spacing: -0.03em;
+    color: var(--color-china-red);
+}
+
+.chinaMarathon-subtitle{
+    font-family: var(--font-family);
+    font-weight: 700;
+    line-height: 102%;
+    font-style: italic;
+    letter-spacing: -0.03em;
+    font-size: clamp(18px, 5vw, 20px);
+    color: var(--color-primary-light);
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+    .chinaMarathon-container {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .chinaMarathon-heading {
+        max-width: 600px;
+        padding: 30px 40px 35px;
+    }
+    
+    .chinaMarathon-title {
+        font-size: 36px;
+    }
+    
+    .chinaMarathon-subtitle {
+        font-size: 26px;
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .chinaMarathon-heading {
+        max-width: 800px;
+        padding: 40px 50px 45px;
+    }
+    
+    .chinaMarathon-title {
+        font-size: 42px;
+    }
+    
+    .chinaMarathon-subtitle {
+        font-size: 30px;
+    }
+}

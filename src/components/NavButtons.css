@@ -1,0 +1,59 @@
+.button-group-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 30px;
+    padding: 0 var(--container-padding);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 100%;
+    max-width: min(300px, 90%);
+    height: 61.77px;
+    padding: 8.24903px;
+    box-sizing: border-box;
+    border-radius: var(--radius-medium);
+    background: linear-gradient(108.15deg, var(--color-primary-dark) -8.28%, var(--color-secondary) 86.14%);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(16px, 4.5vw, 18px);
+    line-height: 96.2%;
+    letter-spacing: -0.03em;
+    color: var(--color-white);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .button-group-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        max-width: 800px;
+        margin: 30px auto 0;
+    }
+    
+    .button {
+        max-width: 280px;
+        flex: 0 1 calc(50% - 6px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .button-group-container {
+        max-width: 1000px;
+    }
+    
+    .button {
+        flex: 0 1 calc(25% - 9px);
+        max-width: 240px;
+    }
+}
